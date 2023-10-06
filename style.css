@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.registration-form {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://file.forms.app/sitefile/How%20to%20customize%20your%20web%20form%20design%20cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form  {
+    width: 40%;
+    height: 80vh;
+    background-color: transparent;
+    backdrop-filter: blur(14px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.form>h2 {
+    font-size: 30px;
+    position: relative;
+    left: 120px;
+    top: 10px;
+    color: rgb(15, 18, 110);
+}
+
+
+#show-alert {
+    position: relative;
+    left: 240px;
+    bottom: 15px;
+    color: red;
+    font-family: 'Allerta', sans-serif;
+}
+
+/* All Sections In One Class */
+.form-section {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+.form-section>h3 {
+    font-size: 1.4rem;
+}
+
+/* Input Section */
+
+input {
+    background-color: transparent !important;
+    outline: none;
+    margin-left: 2rem;
+    width: 190px;
+    border-bottom: 2px solid black;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+input::placeholder {
+    background-color: transparent !important;
+    font-size: 20px;
+}
+
+input {
+    border: none;
+}
+
+/* Border For Input */
+.br {
+    border: 2px solid black;
+}
+
+/* Border for Password Input And Confirm Password Input */
+.pw {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* Show Password Icon */
+.fa-eye {
+    height: 30px;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+ @media screen  and (max-width : 480px) {
+    
+    #show-alert {
+        position: relative;
+        left: 80px;
+    }
+
+    .form>h2 {
+        position: relative;
+        left: 40px;
+        top: 10px;
+        color: rgb(15, 18, 110);
+    }
+
+    /* Show Password Icon */
+    .fa-eye {
+        height: 30px;
+        font-size: 20px;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+ }
